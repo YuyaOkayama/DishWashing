@@ -1,0 +1,44 @@
+// Place all the styles related to the wash controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1.title{
+    font-size:20pt;
+    color:darksalmon
+}
+
+.form{
+    color: #999;
+    padding: 0px 10px;
+    font-size:14pt;
+}
+
+th{
+    background-color: #999;
+    color: #eee;
+    font-size: 14pt;
+    padding: 2px;
+}
+
+.wash tr td{
+    background-color: #eee;
+    color: #666;
+    padding: 10px 5px;
+}
+
+td.msg{
+    font-size: 12pt;
+}
+td.time{
+    font-size:9pt;
+}
+
+div.footer{
+    border-bottom-style: solid;
+    border-bottom-width: 1px 0px 0px 0px;
+    border-color: #999;
+    margin: 50px 0px 0px 0px;
+    padding:3px 0px 0px 0px;
+    font-size: 12pt;
+    text-align:right;
+    font-size:9pt;
+}

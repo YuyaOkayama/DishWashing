@@ -1,0 +1,24 @@
+<table class="form">
+<%= form_tag(controller:"wash",action:"index") do %>
+	<tr>
+		<td>name:</td>
+		<td><%= text_field_tag("name","Guest") %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><%= submit_tag("Start Dish Washing") %></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><%= @wash_count +' people have washed their dishes' %></td>
+	</tr>
+<% end %>
+</table>
+<table class="wash">
+<% @wash_data.each do |key,obj| %>
+<tr>
+	<td class="msg"><%= obj['name'] + ' is start washing dishes' %></td>
+	<td class="time"><%= Time.at(key.to_i) %></td>
+</tr>
+<% end %>
+</table>
